@@ -8,7 +8,7 @@
 <script type = "text/javascript" src="active.js">
 </script>
 
-<body onload="init()">
+<body onload="init()" <!-- functionc alled immediately -->
 <h1>Software Development - demo of active data from server</h1>
 <br> (Written by Jim Skon)
 
@@ -21,9 +21,9 @@ String to apply filter for:
 <input name="uname" type="text" id=uname maxlength=30></td>
 
 <p>
-  <input type="button" onclick="javascript: getProcList ()" name="Results" value="Submit" />
-  <input type="button" onclick="javascript: AutoRefresh ()" name="AutoRefresh" value="Submit" />
-  <input type="button" onclick="javascript: Stop Refresh ()" name="Stop" value="Submit" />
+  <input type="button" onclick="javascript: getProcList ()" name="Results" value="Show Processes" />
+  <input type="button" onclick="javascript: AutoRefresh ()" name="AutoRefresh" value="Auto Update" /> 
+  <input type="button" onclick="javascript: StopRefresh ()" name="Stop" value="Stop Update" />
 </p>
 
 

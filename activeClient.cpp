@@ -26,7 +26,7 @@ int main() {
   // Call runCommand to get results
   string stuname = **uname;
   cout << stuname;
-  string command = "ps -aef | grep " + stuname;
+  string command = "ps -aef | grep " + stuname; 
   string results = runCommand(command);
   cout << results;
   

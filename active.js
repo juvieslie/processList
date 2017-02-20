@@ -15,7 +15,7 @@ function getProcList () {
 
     if (uname.length < 1) return;
 
-    XMLHttp.open("GET", "/cgi-bin/skon_activeClient.cgi?"
+    XMLHttp.open("GET", "/cgi-bin/riveraj_activeClient.cgi?"
 		 + "uname=" + uname
 		 ,true);
     XMLHttp.onreadystatechange=function() {
@@ -24,4 +24,8 @@ function getProcList () {
 
     }
     XMLHttp.send(null);
+}
+function AutoRefresh ()
+{
+    setInterval(function(){getProcList()}, 1000)
 }
